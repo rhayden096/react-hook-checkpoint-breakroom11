@@ -10,7 +10,7 @@ function App() {
     const [data, setData] = useState([])
     const fetchURL = "http://18.224.200.47"
     const getData = () => {
-    return fetch(`${fetchURL}`)
+    return fetch(`${fetchURL}/products/list`)
         .then((res) => res.json())}
   
     useEffect(() => {
